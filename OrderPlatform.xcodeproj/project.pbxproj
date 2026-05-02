@@ -1,0 +1,749 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BF0000000000000000000001 /* OrderPlatformApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR0000000000000000000001 /* OrderPlatformApp.swift */; };
+		BF0000000000000000000002 /* AppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR0000000000000000000002 /* AppDependencies.swift */; };
+		BF0000000000000000000003 /* AppRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR0000000000000000000003 /* AppRoute.swift */; };
+		BF0000000000000000000004 /* OrderAppShell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR0000000000000000000004 /* OrderAppShell.swift */; };
+		BF0000000000000000000005 /* APIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR0000000000000000000005 /* APIConfig.swift */; };
+		BF0000000000000000000006 /* LocalizedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR0000000000000000000006 /* LocalizedText.swift */; };
+		BF0000000000000000000007 /* OrderAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR0000000000000000000007 /* OrderAPIClient.swift */; };
+		BF0000000000000000000008 /* CategoryDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR0000000000000000000008 /* CategoryDTO.swift */; };
+		BF0000000000000000000009 /* FoodDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR0000000000000000000009 /* FoodDTO.swift */; };
+		BF000000000000000000000A /* NewsDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR000000000000000000000A /* NewsDTO.swift */; };
+		BF000000000000000000000B /* AuthDTOs.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR000000000000000000000B /* AuthDTOs.swift */; };
+		BF000000000000000000000C /* OrderDTOs.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR000000000000000000000C /* OrderDTOs.swift */; };
+		BF000000000000000000000D /* PagedResponses.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR000000000000000000000D /* PagedResponses.swift */; };
+		BF000000000000000000000E /* AuthRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR000000000000000000000E /* AuthRepository.swift */; };
+		BF000000000000000000000F /* CatalogRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR000000000000000000000F /* CatalogRepository.swift */; };
+		BF0000000000000000000010 /* OrderRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR0000000000000000000010 /* OrderRepository.swift */; };
+		BF0000000000000000000011 /* NewsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR0000000000000000000011 /* NewsRepository.swift */; };
+		BF0000000000000000000012 /* KeychainTokenStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR0000000000000000000012 /* KeychainTokenStorage.swift */; };
+		BF0000000000000000000013 /* CartStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR0000000000000000000013 /* CartStorage.swift */; };
+		BF0000000000000000000014 /* CartStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR0000000000000000000014 /* CartStore.swift */; };
+		BF0000000000000000000015 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR0000000000000000000015 /* SessionManager.swift */; };
+		BF0000000000000000000016 /* ImageURLResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR0000000000000000000016 /* ImageURLResolver.swift */; };
+		BF0000000000000000000017 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR0000000000000000000017 /* HomeView.swift */; };
+		BF0000000000000000000018 /* CategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR0000000000000000000018 /* CategoriesView.swift */; };
+		BF0000000000000000000019 /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR0000000000000000000019 /* CartView.swift */; };
+		BF000000000000000000001A /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR000000000000000000001A /* CheckoutView.swift */; };
+		BF000000000000000000001B /* FoodDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR000000000000000000001B /* FoodDetailView.swift */; };
+		BF000000000000000000001C /* FoodListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR000000000000000000001C /* FoodListView.swift */; };
+		BF000000000000000000001D /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR000000000000000000001D /* AccountView.swift */; };
+		BF000000000000000000001E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR000000000000000000001E /* LoginView.swift */; };
+		BF000000000000000000001F /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR000000000000000000001F /* RegisterView.swift */; };
+		BF0000000000000000000020 /* OrderSuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR0000000000000000000020 /* OrderSuccessView.swift */; };
+		BF0000000000000000000021 /* OrdersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR0000000000000000000021 /* OrdersListView.swift */; };
+		BF0000000000000000000022 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FR0000000000000000000022 /* Assets.xcassets */; };
+		BF0000000000000000000023 /* DTOCodecTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR0000000000000000000023 /* DTOCodecTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FR0000000000000000000001 /* OrderPlatformApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderPlatformApp.swift; sourceTree = "<group>"; };
+		FR0000000000000000000002 /* AppDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependencies.swift; sourceTree = "<group>"; };
+		FR0000000000000000000003 /* AppRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRoute.swift; sourceTree = "<group>"; };
+		FR0000000000000000000004 /* OrderAppShell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderAppShell.swift; sourceTree = "<group>"; };
+		FR0000000000000000000005 /* APIConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfig.swift; sourceTree = "<group>"; };
+		FR0000000000000000000006 /* LocalizedText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedText.swift; sourceTree = "<group>"; };
+		FR0000000000000000000007 /* OrderAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderAPIClient.swift; sourceTree = "<group>"; };
+		FR0000000000000000000008 /* CategoryDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDTO.swift; sourceTree = "<group>"; };
+		FR0000000000000000000009 /* FoodDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDTO.swift; sourceTree = "<group>"; };
+		FR000000000000000000000A /* NewsDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDTO.swift; sourceTree = "<group>"; };
+		FR000000000000000000000B /* AuthDTOs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthDTOs.swift; sourceTree = "<group>"; };
+		FR000000000000000000000C /* OrderDTOs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDTOs.swift; sourceTree = "<group>"; };
+		FR000000000000000000000D /* PagedResponses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagedResponses.swift; sourceTree = "<group>"; };
+		FR000000000000000000000E /* AuthRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRepository.swift; sourceTree = "<group>"; };
+		FR000000000000000000000F /* CatalogRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogRepository.swift; sourceTree = "<group>"; };
+		FR0000000000000000000010 /* OrderRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderRepository.swift; sourceTree = "<group>"; };
+		FR0000000000000000000011 /* NewsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsRepository.swift; sourceTree = "<group>"; };
+		FR0000000000000000000012 /* KeychainTokenStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainTokenStorage.swift; sourceTree = "<group>"; };
+		FR0000000000000000000013 /* CartStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartStorage.swift; sourceTree = "<group>"; };
+		FR0000000000000000000014 /* CartStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartStore.swift; sourceTree = "<group>"; };
+		FR0000000000000000000015 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		FR0000000000000000000016 /* ImageURLResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageURLResolver.swift; sourceTree = "<group>"; };
+		FR0000000000000000000017 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		FR0000000000000000000018 /* CategoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesView.swift; sourceTree = "<group>"; };
+		FR0000000000000000000019 /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
+		FR000000000000000000001A /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
+		FR000000000000000000001B /* FoodDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailView.swift; sourceTree = "<group>"; };
+		FR000000000000000000001C /* FoodListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodListView.swift; sourceTree = "<group>"; };
+		FR000000000000000000001D /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		FR000000000000000000001E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		FR000000000000000000001F /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		FR0000000000000000000020 /* OrderSuccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderSuccessView.swift; sourceTree = "<group>"; };
+		FR0000000000000000000021 /* OrdersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersListView.swift; sourceTree = "<group>"; };
+		FR0000000000000000000022 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FR0000000000000000000023 /* DTOCodecTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTOCodecTests.swift; sourceTree = "<group>"; };
+		FR0000000000000000000024 /* OrderPlatform.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrderPlatform.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FR0000000000000000000025 /* OrderPlatformTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrderPlatformTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FR0000000000000000000026 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		FR0000000000000000000027 /* Staging.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Staging.xcconfig; sourceTree = "<group>"; };
+		FR0000000000000000000028 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FW0000000000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FW0000000000000000000002 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		G00000000000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				G00000000000000000000002 /* Config */,
+				G00000000000000000000003 /* OrderPlatform */,
+				G00000000000000000000004 /* OrderPlatformTests */,
+				G00000000000000000000005 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		G00000000000000000000002 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				FR0000000000000000000026 /* Debug.xcconfig */,
+				FR0000000000000000000027 /* Staging.xcconfig */,
+				FR0000000000000000000028 /* Release.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		G00000000000000000000003 /* OrderPlatform */ = {
+			isa = PBXGroup;
+			children = (
+				G00000000000000000000006 /* App */,
+				G00000000000000000000007 /* Config */,
+				G00000000000000000000008 /* Core */,
+				G00000000000000000000009 /* Features */,
+				G0000000000000000000000A /* Utilities */,
+				FR0000000000000000000022 /* Assets.xcassets */,
+			);
+			path = OrderPlatform;
+			sourceTree = "<group>";
+		};
+		G00000000000000000000004 /* OrderPlatformTests */ = {
+			isa = PBXGroup;
+			children = (
+				FR0000000000000000000023 /* DTOCodecTests.swift */,
+			);
+			path = OrderPlatformTests;
+			sourceTree = "<group>";
+		};
+		G00000000000000000000005 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FR0000000000000000000024 /* OrderPlatform.app */,
+				FR0000000000000000000025 /* OrderPlatformTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		G00000000000000000000006 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				FR0000000000000000000001 /* OrderPlatformApp.swift */,
+				FR0000000000000000000002 /* AppDependencies.swift */,
+				FR0000000000000000000003 /* AppRoute.swift */,
+				FR0000000000000000000004 /* OrderAppShell.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		G00000000000000000000007 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				FR0000000000000000000005 /* APIConfig.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		G00000000000000000000008 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				G0000000000000000000000B /* API */,
+				G0000000000000000000000C /* Storage */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		G00000000000000000000009 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				G0000000000000000000000D /* Home */,
+				G0000000000000000000000E /* Categories */,
+				G0000000000000000000000F /* Cart */,
+				G00000000000000000000100 /* Checkout */,
+				G00000000000000000000101 /* FoodDetail */,
+				G00000000000000000000102 /* FoodList */,
+				G00000000000000000000103 /* Account */,
+				G00000000000000000000104 /* Auth */,
+				G00000000000000000000105 /* Orders */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		G0000000000000000000000A /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				FR0000000000000000000016 /* ImageURLResolver.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		G0000000000000000000000B /* API */ = {
+			isa = PBXGroup;
+			children = (
+				FR0000000000000000000006 /* LocalizedText.swift */,
+				FR0000000000000000000007 /* OrderAPIClient.swift */,
+				G00000000000000000000106 /* DTOs */,
+				G00000000000000000000107 /* Repositories */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		G00000000000000000000106 /* DTOs */ = {
+			isa = PBXGroup;
+			children = (
+				FR0000000000000000000008 /* CategoryDTO.swift */,
+				FR0000000000000000000009 /* FoodDTO.swift */,
+				FR000000000000000000000A /* NewsDTO.swift */,
+				FR000000000000000000000B /* AuthDTOs.swift */,
+				FR000000000000000000000C /* OrderDTOs.swift */,
+				FR000000000000000000000D /* PagedResponses.swift */,
+			);
+			path = DTOs;
+			sourceTree = "<group>";
+		};
+		G00000000000000000000107 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				FR000000000000000000000E /* AuthRepository.swift */,
+				FR000000000000000000000F /* CatalogRepository.swift */,
+				FR0000000000000000000010 /* OrderRepository.swift */,
+				FR0000000000000000000011 /* NewsRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		G0000000000000000000000C /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				FR0000000000000000000012 /* KeychainTokenStorage.swift */,
+				FR0000000000000000000013 /* CartStorage.swift */,
+				FR0000000000000000000014 /* CartStore.swift */,
+				FR0000000000000000000015 /* SessionManager.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		G0000000000000000000000D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				FR0000000000000000000017 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		G0000000000000000000000E /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				FR0000000000000000000018 /* CategoriesView.swift */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		G0000000000000000000000F /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				FR0000000000000000000019 /* CartView.swift */,
+			);
+			path = Cart;
+			sourceTree = "<group>";
+		};
+		G00000000000000000000100 /* Checkout */ = {
+			isa = PBXGroup;
+			children = (
+				FR000000000000000000001A /* CheckoutView.swift */,
+			);
+			path = Checkout;
+			sourceTree = "<group>";
+		};
+		G00000000000000000000101 /* FoodDetail */ = {
+			isa = PBXGroup;
+			children = (
+				FR000000000000000000001B /* FoodDetailView.swift */,
+			);
+			path = FoodDetail;
+			sourceTree = "<group>";
+		};
+		G00000000000000000000102 /* FoodList */ = {
+			isa = PBXGroup;
+			children = (
+				FR000000000000000000001C /* FoodListView.swift */,
+			);
+			path = FoodList;
+			sourceTree = "<group>";
+		};
+		G00000000000000000000103 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				FR000000000000000000001D /* AccountView.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		G00000000000000000000104 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				FR000000000000000000001E /* LoginView.swift */,
+				FR000000000000000000001F /* RegisterView.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		G00000000000000000000105 /* Orders */ = {
+			isa = PBXGroup;
+			children = (
+				FR0000000000000000000020 /* OrderSuccessView.swift */,
+				FR0000000000000000000021 /* OrdersListView.swift */,
+			);
+			path = Orders;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		NT00000000000000000000001 /* OrderPlatform */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = XC00000000000000000000002 /* Build configuration list for PBXNativeTarget "OrderPlatform" */;
+			buildPhases = (
+				SRC0000000000000000000001 /* Sources */,
+				FW0000000000000000000001 /* Frameworks */,
+				RES0000000000000000000001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OrderPlatform;
+			productName = OrderPlatform;
+			productReference = FR0000000000000000000024 /* OrderPlatform.app */;
+			productType = "com.apple.product-type.application";
+		};
+		NT00000000000000000000002 /* OrderPlatformTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = XC00000000000000000000004 /* Build configuration list for PBXNativeTarget "OrderPlatformTests" */;
+			buildPhases = (
+				SRC0000000000000000000002 /* Sources */,
+				FW0000000000000000000002 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DEP0000000000000000000001 /* PBXTargetDependency */,
+			);
+			name = OrderPlatformTests;
+			productName = OrderPlatformTests;
+			productReference = FR0000000000000000000025 /* OrderPlatformTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		PR00000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					NT00000000000000000000001 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					NT00000000000000000000002 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = NT00000000000000000000001;
+					};
+				};
+			};
+			buildConfigurationList = XC00000000000000000000001 /* Build configuration list for PBXProject "OrderPlatform" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = G00000000000000000000001;
+			productRefGroup = G00000000000000000000005 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				NT00000000000000000000001 /* OrderPlatform */,
+				NT00000000000000000000002 /* OrderPlatformTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		RES0000000000000000000001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF0000000000000000000022 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		SRC0000000000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF0000000000000000000001 /* OrderPlatformApp.swift in Sources */,
+				BF0000000000000000000002 /* AppDependencies.swift in Sources */,
+				BF0000000000000000000003 /* AppRoute.swift in Sources */,
+				BF0000000000000000000004 /* OrderAppShell.swift in Sources */,
+				BF0000000000000000000005 /* APIConfig.swift in Sources */,
+				BF0000000000000000000006 /* LocalizedText.swift in Sources */,
+				BF0000000000000000000007 /* OrderAPIClient.swift in Sources */,
+				BF0000000000000000000008 /* CategoryDTO.swift in Sources */,
+				BF0000000000000000000009 /* FoodDTO.swift in Sources */,
+				BF000000000000000000000A /* NewsDTO.swift in Sources */,
+				BF000000000000000000000B /* AuthDTOs.swift in Sources */,
+				BF000000000000000000000C /* OrderDTOs.swift in Sources */,
+				BF000000000000000000000D /* PagedResponses.swift in Sources */,
+				BF000000000000000000000E /* AuthRepository.swift in Sources */,
+				BF000000000000000000000F /* CatalogRepository.swift in Sources */,
+				BF0000000000000000000010 /* OrderRepository.swift in Sources */,
+				BF0000000000000000000011 /* NewsRepository.swift in Sources */,
+				BF0000000000000000000012 /* KeychainTokenStorage.swift in Sources */,
+				BF0000000000000000000013 /* CartStorage.swift in Sources */,
+				BF0000000000000000000014 /* CartStore.swift in Sources */,
+				BF0000000000000000000015 /* SessionManager.swift in Sources */,
+				BF0000000000000000000016 /* ImageURLResolver.swift in Sources */,
+				BF0000000000000000000017 /* HomeView.swift in Sources */,
+				BF0000000000000000000018 /* CategoriesView.swift in Sources */,
+				BF0000000000000000000019 /* CartView.swift in Sources */,
+				BF000000000000000000001A /* CheckoutView.swift in Sources */,
+				BF000000000000000000001B /* FoodDetailView.swift in Sources */,
+				BF000000000000000000001C /* FoodListView.swift in Sources */,
+				BF000000000000000000001D /* AccountView.swift in Sources */,
+				BF000000000000000000001E /* LoginView.swift in Sources */,
+				BF000000000000000000001F /* RegisterView.swift in Sources */,
+				BF0000000000000000000020 /* OrderSuccessView.swift in Sources */,
+				BF0000000000000000000021 /* OrdersListView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		SRC0000000000000000000002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF0000000000000000000023 /* DTOCodecTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXContainerItemProxy section */
+		DEP0000000000000000000002 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = PR00000000000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = NT00000000000000000000001;
+			remoteInfo = OrderPlatform;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXTargetDependency section */
+		DEP0000000000000000000001 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = NT00000000000000000000001 /* OrderPlatform */;
+			targetProxy = DEP0000000000000000000002 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		XC10000000000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FR0000000000000000000026 /* Debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		XC10000000000000000000002 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FR0000000000000000000027 /* Staging.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Staging;
+		};
+		XC10000000000000000000003 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FR0000000000000000000028 /* Release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		XC20000000000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FR0000000000000000000026 /* Debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				ENABLE_TESTABILITY = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_APIBaseURL = "$(API_BASE_URL)";
+				INFOPLIST_KEY_APIOrigin = "$(API_ORIGIN)";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.orderplatform.OrderPlatform;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		XC20000000000000000000002 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FR0000000000000000000027 /* Staging.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				ENABLE_TESTABILITY = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_APIBaseURL = "$(API_BASE_URL)";
+				INFOPLIST_KEY_APIOrigin = "$(API_ORIGIN)";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.orderplatform.OrderPlatform;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Staging;
+		};
+		XC20000000000000000000003 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FR0000000000000000000028 /* Release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				ENABLE_TESTABILITY = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_APIBaseURL = "$(API_BASE_URL)";
+				INFOPLIST_KEY_APIOrigin = "$(API_ORIGIN)";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.orderplatform.OrderPlatform;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		XC30000000000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.orderplatform.OrderPlatformTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OrderPlatform.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OrderPlatform";
+			};
+			name = Debug;
+		};
+		XC30000000000000000000002 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.orderplatform.OrderPlatformTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OrderPlatform.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OrderPlatform";
+			};
+			name = Staging;
+		};
+		XC30000000000000000000003 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.orderplatform.OrderPlatformTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OrderPlatform.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OrderPlatform";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		XC00000000000000000000001 /* Build configuration list for PBXProject "OrderPlatform" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				XC10000000000000000000001 /* Debug */,
+				XC10000000000000000000002 /* Staging */,
+				XC10000000000000000000003 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		XC00000000000000000000002 /* Build configuration list for PBXNativeTarget "OrderPlatform" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				XC20000000000000000000001 /* Debug */,
+				XC20000000000000000000002 /* Staging */,
+				XC20000000000000000000003 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		XC00000000000000000000004 /* Build configuration list for PBXNativeTarget "OrderPlatformTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				XC30000000000000000000001 /* Debug */,
+				XC30000000000000000000002 /* Staging */,
+				XC30000000000000000000003 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = PR00000000000000000000001 /* Project object */;
+}
